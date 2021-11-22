@@ -1,0 +1,701 @@
+@charset 'utf-8';
+@import url('font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -0.0425rem;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Noto Sans KR', '맑은고딕', 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1.6rem;
+    word-break: break-all;
+}
+
+/* 공동 클래스 */
+.container {
+    position: relative;
+    display: block;
+    width: 117rem;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 7.7rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9999;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    border: 0;
+    vertical-align: top;
+    line-height: 7.7rem;
+    float: left;
+}
+
+.main-menu {
+    position: absolute;
+    left: 18rem;
+    top: 2rem;
+    display: block;
+    float: left;
+}
+
+.main-menu>li {
+    position: relative;
+    display: block;
+    margin: 0 4.2rem;
+    float: left;
+}
+
+.main-menu>li::after {
+    content: '';
+    position: absolute;
+    right: -4.2rem;
+    top: 1.8rem;
+    display: block;
+    width: 0.2rem;
+    height: 1rem;
+    background-color: #aaaaab;
+}
+
+.main-menu>li:last-child::after {
+    content: none;
+}
+
+.main-menu>li:first-child {
+    margin-left: 0;
+}
+
+.main-menu>li>a {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    padding: 1.4rem;
+    text-align: center;
+}
+
+.all-bt {
+    position: absolute;
+    right: -8.8rem;
+    top: 0;
+    display: block;
+    background-color: #E6E6E6;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    padding: 3.05rem 3.4rem;
+    z-index: 999999;
+}
+
+
+/* 비주얼 */
+.visual {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 73.4rem;
+    overflow: hidden;
+    background: url('../images/main-visual_210524.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.visual .container {
+    height: 100%;
+}
+
+.visual-txt {
+    position: absolute;
+    left: 0;
+    top: 20.7rem;
+    display: block;
+}
+
+/* 친환경 포장 */
+.eco {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 7.5rem;
+}
+
+.eco-wrap {
+    position: relative;
+    display: block;
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.eco-box {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.eco-box>li {
+    position: relative;
+    display: block;
+    width: 30rem;
+    float: left;
+}
+
+.eco-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    display: block;
+}
+
+.eco-tit {
+    position: relative;
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #617c05;
+    letter-spacing: -0.0425rem;
+    line-height: 2;
+    padding-top: 13.8rem;
+    text-align: center;
+}
+
+.eco-txt {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #505050;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* 상품소개 */
+.goods {
+    position: relative;
+    display: block;
+}
+
+.goods .container {
+    width: 117rem;
+    border-top: 0.1rem solid #d3d3d3;
+}
+
+.goods-box {
+    position: relative;
+    display: block;
+    margin-top: 7.5rem;
+}
+
+.goods-box>li {
+    position: relative;
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.goods-img {
+    position: relative;
+    display: block;
+    width: 24rem;
+    height: 25.7rem;
+    margin: 0 auto;
+}
+
+.goods-tit {
+    position: relative;
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.goods-txt {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #6d6d6d;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.water-img {
+    position: relative;
+    display: block;
+    width: 3.7rem;
+    height: 5.5rem;
+    padding: 9.5rem;
+    margin: 0 auto;
+}
+
+.water-img>img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+/* 상품의 우수함 */
+.great {
+    position: relative;
+    display: block;
+}
+
+.great .container {
+    width: 117rem;
+}
+
+.great-box {
+    position: relative;
+    display: block;
+}
+
+.great-box {
+    position: relative;
+    display: block;
+}
+
+.great-box>li {
+    position: relative;
+    display: block;
+    width: 25%;
+    height: 20.8rem;
+    float: left;
+}
+
+.great-box>li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 17%;
+    display: block;
+    width: 0.1rem;
+    height: 3.8rem;
+    background-color: #BBBDC2;
+    vertical-align: 7rem;
+}
+
+.great-box>li:first-child::after {
+    content: none;
+}
+
+.great-img {
+    position: relative;
+    display: block;
+    width: 10.6rem;
+    height: 7.2rem;
+    margin: 0 auto;
+}
+
+.great-img>img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.great-tit {
+    position: relative;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.great-txt {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #666;
+    letter-spacing: -0.0425rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1.4rem;
+
+}
+
+.great-back {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    margin-top: 7.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.great-back>img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* 고객문의 */
+.faq {
+    position: relative;
+    display: block;
+    margin-bottom: 13rem;
+}
+
+.faq .container {
+    width: 117rem;
+}
+
+.faq-wrap {
+    position: relative;
+    display: block;
+    
+}
+
+.faq-box {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.faq-ico {
+    position: relative;
+    display: block;
+}
+
+.faq-help>img {
+    position: relative;
+    display: block;
+}
+
+.faq-txt {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 3.7rem;
+}
+
+.faq-box::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 8.6rem;
+    transform: translateX(-50%);
+    display: block;
+    width: 7.9rem;
+    height: 0.1rem;
+    background-color: #BABABA;
+    /* margin-top: 1.6rem; */
+    margin-bottom: 2.1rem;
+}
+
+.faq-help {
+    position: relative;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: ;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+}
+
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+    border-top: 0.1rem solid #F2F2F2;
+}
+
+.footer .container {
+    width: 117rem;
+}
+
+.f-top {
+    position: relative;
+    display: block;
+    margin-top: 4.6rem;
+}
+
+.sns {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    display: block;
+}
+
+.sns>li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 1.7rem;
+}
+
+.sns>li:last-child {
+    margin-right: 0;
+}
+
+.sns>li>a {
+    position: relative;
+    display: block;
+}
+
+.policy {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7.5rem;
+    display: block;
+}
+
+.policy>li {
+    position: relative;
+    display: block;
+    padding: 0 1.8rem;
+    float: left;
+}
+
+.policy>li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #B0B0B0;
+}
+
+.policy>li>a {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.05rem;
+    line-height: 1.3;
+}
+
+.policy b {
+    font-weight: 500;
+}
+
+.f-site {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    padding: 1.4rem 14rem 1.4rem 1.8rem;
+    border: 0.1rem solid #000;
+}
+
+.f-site>img {
+    content: '';
+    position: absolute;
+    right: 3rem;
+    top: 1.9rem;
+    display: block;
+}
+
+.f-bottom {
+    position: relative;
+    display: block;
+    width: 90rem;
+    padding-top: 15rem;
+    margin: 0 auto;
+}
+
+.f-goods-qe {
+    position: relative;
+    display: block;
+}
+
+.f-goods-qe p {
+    position: relative;
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.f-goods-qe a {
+    position: relative;
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.f-goods-qe span {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.f-fran-qe {
+    position: relative;
+    display: block;
+}
+
+.f-fran-qe::after {
+    content: '';
+    position: absolute;
+    left: -11rem;
+    top: 0;
+    display: block;
+    width: 0.1rem;
+    height: 100%;
+    background-color: #BBBDC2;
+}
+
+.f-fran-qe p {
+    position: relative;
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.f-fran-qe a {
+    position: relative;
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.f-fran-qe span {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.f-address-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 29.5rem;
+    display: block;
+    padding-bottom: 6rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.f-address-wrap span {
+    position: relative;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #7b7b7b;
+    letter-spacing: -0.0425rem;
+    line-height: 1;
+    margin: 0.5rem 1rem;
+}
